@@ -10,10 +10,41 @@
     <h1>Daily Journal</h1>
     <form action="">
         <fieldset>
-            <label for="journalDate">Date of Entry</label>
+            <label for="journalDate">Date of entry</label>
             <input type="date" name="journalDate" id="journalDate">
         </fieldset>
     </form>
+    <form action="">
+        <fieldset>
+            <label for="conceptsCovered">Concepts covered</label>
+            <input type="text" name="conceptsCovered" id="conceptsCovered">
+        </fieldset>
+    </form>
+        <form>
+            <fieldset>
+                <label for="journalEntry">Journal Entry</label>
+                <input type="text" name="journalEntry" id="journalEntry">
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <label for="mood">Mood for the day</label>
+               <select id="mood" name="mood">
+                   <option value="happy">Happy</option>
+                   <option value="so-so">So-so</option>
+                   <option value="tired">Tired</option>
+                   <option value="frustrated">Frustrated</option>
+                   <option value="Mad">Mad</option>
+            </fieldset>
+        </form>
+        <form action="">
+            <fieldset>
+                <label for="recordJournalEntry">Record Journal Entry</label>
+                <input type="button" value="">
+              <button type="submit">Record Journal Entry</button>
+            </fieldset>
+        </form>
+    
 
     
     <script src="script.js"></script>
