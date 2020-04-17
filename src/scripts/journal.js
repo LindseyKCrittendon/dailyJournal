@@ -1,4 +1,11 @@
-const journalEntry = [
+const journalEntry = {
+    date:"",
+    conceptsCovered: "",
+    entry: "",
+    mood: "",
+}
+
+const filledJournalEntryArray = [
     {
     date: "04/06/2020",
     conceptsCovered: "School policies",
@@ -29,3 +36,4 @@ const journalEntry = [
     entry: "We learned how to protect the master by making branches, peer reviewing, and merging",
     mood: "tired",
 }]
+
