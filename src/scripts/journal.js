@@ -1,9 +1,9 @@
-const journalEntry = {
-    date:"",
-    conceptsCovered: "",
-    entry: "",
-    mood: "",
-}
+// const journalEntry = {
+//     date:"",
+//     conceptsCovered: "",
+//     entry: "",
+//     mood: "",
+// };
 
 const filledJournalEntryArray = [
     {
@@ -35,5 +35,9 @@ const filledJournalEntryArray = [
     conceptsCovered: "github and branches",
     entry: "We learned how to protect the master by making branches, peer reviewing, and merging",
     mood: "tired",
-}]
+}];
+
+const EmptyJournalEntryArray = [];
+
+console.log(filledJournalEntryArray)
 
