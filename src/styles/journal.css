@@ -1,4 +1,23 @@
-{
+div {
    display: flex;
    flex-direction: column; 
+   flex-wrap: wrap;
+   align-items: center;
+   }
+
+fieldset{
+   background-color: #69302c;
+   color: white;
+   text-shadow: 2px 2px 5px #000000;
+}
+
+h1{
+   color: white;
+   text-shadow: 3px 3px 5px #69302c;  
+}
+
+body{
+   background-image: url("https://st.depositphotos.com/1968353/1887/i/450/depositphotos_18877651-stock-photo-fragment-of-honeycomb.jpg") ;
+   background-repeat: no-repeat;
+   background-size: 100%;
 }
