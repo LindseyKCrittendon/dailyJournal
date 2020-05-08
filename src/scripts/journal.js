@@ -69,11 +69,24 @@ const makeJournalEntryComponent = (journalEntry) => {
     `
 };
 // console.log(makeJournalEntryComponent(journalEntryArray[0]))
-
+//This prints all journal entries to the dom
 for(i = 0; i <journalEntryArray.length; i++) {
     let domEnter = makeJournalEntryComponent(journalEntryArray[i]);
     document.querySelector(".entryLog").innerHTML += domEnter
 };
 
 // renderJournalEntries(journalEntryArray)
+
+document.querySelector("#submit-btn").addEventListener("click", function(){
+    console.log("you clicked this button");
+    const dateEntry = document.querySelector("#journalDate").value;
+    const conceptsCovered = document.querySelector("#conceptsCovered").value;
+    const journalEntryField = document.querySelector("#journalEntry").value;
+    const dailyMood = document.querySelector("#mood").value;
+    console.log(dateEntry, conceptsCovered, journalEntryField, dailyMood);
+
+} )
+
+
+
 
