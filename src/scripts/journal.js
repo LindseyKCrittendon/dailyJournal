@@ -46,32 +46,34 @@ const journalEntry5 =
     mood: "tired",
 };
 
-const diary = [];
-console.log(diary);
+const journalEntryArray = [];
+console.log(journalEntryArray);
 
-diary.push(journalEntry1);
-diary.push(journalEntry2);
-diary.push(journalEntry3);
-diary.push(journalEntry4);
-diary.push(journalEntry5);
+journalEntryArray.push(journalEntry1);
+journalEntryArray.push(journalEntry2);
+journalEntryArray.push(journalEntry3);
+journalEntryArray.push(journalEntry4);
+journalEntryArray.push(journalEntry5);
+
+
 
 const makeJournalEntryComponent = (journalEntry) => {
     //create your own html structure for a journal entry
     return `
     <section class ="single-entry">
-    <h1>${journalEntry.date}</h1>
-    <br>
-    <h3>${journalEntry.concept}</h3>
+    <h2>${journalEntry.date}</h2>
+    <p>${journalEntry.conceptsCovered}</p>
     <p>${journalEntry.entry}</p>
-    <h4>${journalEntry.mood}</h4>
+    <p>${journalEntry.mood}</p>
     </section>
     `
 };
+// console.log(makeJournalEntryComponent(journalEntryArray[0]))
 
-// for(singleEntry) {
-//     let domEnter = makeJournalEntryComponent(singleEntry)
-//     document.querySelector(".entryLog").innerHTML += domEnter
-// };
+for(i = 0; i <journalEntryArray.length; i++) {
+    let domEnter = makeJournalEntryComponent(journalEntryArray[i]);
+    document.querySelector(".entryLog").innerHTML += domEnter
+};
 
-// renderJournalEntries(diary)
+// renderJournalEntries(journalEntryArray)
 
