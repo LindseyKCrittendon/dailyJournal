@@ -86,7 +86,7 @@ document.querySelector("#submit-btn").addEventListener("click", function(){
     // console.log(dateEntry, conceptsCovered, journalEntryField, moodValue);
 
     //build into an object
-    const newJournalEntryObject = {
+    let newJournalEntryObject = {
         date: dateEntry,
         conceptsCovered: conceptsCovered,
         entry: journalEntryField,
@@ -94,8 +94,16 @@ document.querySelector("#submit-btn").addEventListener("click", function(){
     };
     console.log(newJournalEntryObject);
     journalEntryArray.push(newJournalEntryObject);
-    });
+    console.log(journalEntryArray)
+    // makeJournalEntryComponent()
 
+    //use loop again to print new journal entry to dom. works but is it the best way?
+    for(i = 0; i <journalEntryArray.length; i++) {
+        let domEnter = makeJournalEntryComponent(journalEntryArray[i]);
+        document.querySelector(".entryLog").innerHTML += domEnter
+    };
+    });
+    
     
 
 
