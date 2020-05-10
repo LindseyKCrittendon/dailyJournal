@@ -2,25 +2,19 @@ fetch("http://localhost:3000/entries")
   .then((entries) => entries.json())
   .then((parsedEntries) => {
     console.log(parsedEntries);
+   parsedEntries.forEach((entryObject) => {
+       console.log(entryObject);
+       const htmlString = `<section class ="single-entry">
+       <h2>${entryObject.date}</h2>
+       <p>${entryObject.conceptsCovered}</p>
+       <p>${entryObject.entry}</p>
+       <p>${entryObject.mood}</p>
+       </section>`;
+       document.querySelector(".entryLog").innerHTML += htmlString;
+   }) 
 })
 
-// const makeJournalEntryComponent = (journalEntry) => {
-    //create your own html structure for a journal entry
-//     return `
-//     <section class ="single-entry">
-//     <h2>${journalEntry.date}</h2>
-//     <p>${journalEntry.conceptsCovered}</p>
-//     <p>${journalEntry.entry}</p>
-//     <p>${journalEntry.mood}</p>
-//     </section>
-//     `
-// };
-// console.log(makeJournalEntryComponent(journalEntryArray[0]))
-//This prints all journal entries to the dom
-// for(i = 0; i <journalEntryArray.length; i++) {
-//     let domEnter = makeJournalEntryComponent(journalEntryArray[i]);
-//     document.querySelector(".entryLog").innerHTML += domEnter
-// };
+
 
 // renderJournalEntries(journalEntryArray)
 
