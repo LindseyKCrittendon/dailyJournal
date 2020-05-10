@@ -11,49 +11,26 @@
 
 
 
-    const journalEntry1 = {
-    date: "04/06/2020",
-    conceptsCovered: "School policies",
-    entry: "We learned that you have to show up to class, and you can't be a jerk.",
-    mood: "Happy",
-};
-const journalEntry2 = 
-{
-    date: "04/07/2020",
-    conceptsCovered: "html refresh",
-    entry: "We went over html tags and how to make html more reader friendly.",
-    mood: "Happy",
-};
-const journalEntry3 = 
-{
-    date: "04/08/2020",
-    conceptsCovered: "html and css refresh",
-    entry: "We went through some CSS tricks such as bootstrap and how to steal other code. ",
-    mood: "Happy",
-};
-const journalEntry4 = 
-{
-    date: "04/09/2020",
-    conceptsCovered: "Group Project",
-    entry: "We split into groups and started working on a celebrity tribute page",
-    mood: "Happy",
-};
-const journalEntry5 = 
-{
-    date: "04/10/2020",
-    conceptsCovered: "github and branches",
-    entry: "We learned how to protect the master by making branches, peer reviewing, and merging",
-    mood: "tired",
-};
+//     const journalEntry1 = {
+    
+// };
+// const journalEntry2 = 
+// ;
+// const journalEntry3 = 
+// ;
+// const journalEntry4 = 
+// ;
+// const journalEntry5 = 
+// ;
 
-const journalEntryArray = [];
-console.log(journalEntryArray);
+// const journalEntryArray = [];
+// console.log(journalEntryArray);
 
-journalEntryArray.push(journalEntry1);
-journalEntryArray.push(journalEntry2);
-journalEntryArray.push(journalEntry3);
-journalEntryArray.push(journalEntry4);
-journalEntryArray.push(journalEntry5);
+// journalEntryArray.push(journalEntry1);
+// journalEntryArray.push(journalEntry2);
+// journalEntryArray.push(journalEntry3);
+// journalEntryArray.push(journalEntry4);
+// journalEntryArray.push(journalEntry5);
 
 
 
