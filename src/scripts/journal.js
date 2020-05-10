@@ -82,9 +82,21 @@ document.querySelector("#submit-btn").addEventListener("click", function(){
     const dateEntry = document.querySelector("#journalDate").value;
     const conceptsCovered = document.querySelector("#conceptsCovered").value;
     const journalEntryField = document.querySelector("#journalEntry").value;
-    const moodValue = document.getElementById("mood");
-    // console.log(dateEntry, conceptsCovered, journalEntryField, moodValue.value);
-    })
+    const moodValue = document.getElementById("mood").value;
+    // console.log(dateEntry, conceptsCovered, journalEntryField, moodValue);
+
+    //build into an object
+    const newJournalEntryObject = {
+        date: dateEntry,
+        conceptsCovered: conceptsCovered,
+        entry: journalEntryField,
+        mood: moodValue
+    };
+    console.log(newJournalEntryObject);
+    journalEntryArray.push(newJournalEntryObject);
+    });
+
+    
 
 
 
