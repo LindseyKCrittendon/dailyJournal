@@ -78,14 +78,18 @@ for(i = 0; i <journalEntryArray.length; i++) {
 // renderJournalEntries(journalEntryArray)
 
 document.querySelector("#submit-btn").addEventListener("click", function(){
-    console.log("you clicked this button");
+    // console.log("you clicked this button");
     const dateEntry = document.querySelector("#journalDate").value;
     const conceptsCovered = document.querySelector("#conceptsCovered").value;
     const journalEntryField = document.querySelector("#journalEntry").value;
-    const dailyMood = document.querySelector("#mood").value;
-    console.log(dateEntry, conceptsCovered, journalEntryField, dailyMood);
+    const moodValue = document.getElementById("mood");
+    // console.log(dateEntry, conceptsCovered, journalEntryField, moodValue.value);
+    })
 
-} )
+
+
+
+
 
 
 
