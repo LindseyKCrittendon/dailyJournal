@@ -19,22 +19,30 @@ fetch("http://localhost:3000/entries")
 // renderJournalEntries(journalEntryArray)
 
 document.querySelector("#submit-btn").addEventListener("click", function(){
-    console.log("you clicked this button");
+    // console.log("you clicked this button");
     const dateEntry = document.querySelector("#journalDate").value;
     const conceptsCovered = document.querySelector("#conceptsCovered").value;
     const journalEntryField = document.querySelector("#journalEntry").value;
     const moodValue = document.getElementById("mood").value;
-    console.log(dateEntry, conceptsCovered, journalEntryField, moodValue);
+    // console.log(dateEntry, conceptsCovered, journalEntryField, moodValue);
 
     //build into an object
-    let newJournalEntryObject = {
+    var newJournalEntryObject = {
         date: dateEntry,
         conceptsCovered: conceptsCovered,
         entry: journalEntryField,
         mood: moodValue
+       
     };
     console.log(newJournalEntryObject);
-    parsedEntries.push(newJournalEntryObject);
+    // entries.push(newJournalEntryObject);
+    
+    fetch("http://localhost:3000/entries", { // Replace "url" with your API's URL
+    method: "POST",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(newJournalEntryObject)
     // console.log(entries)
     // makeJournalEntryComponent()
 
@@ -43,7 +51,7 @@ document.querySelector("#submit-btn").addEventListener("click", function(){
     //     let domEnter = makeJournalEntryComponent(journalEntryArray[i]);
     //     document.querySelector(".entryLog").innerHTML += domEnter
     });
-    // });
+    });
     
     
 
